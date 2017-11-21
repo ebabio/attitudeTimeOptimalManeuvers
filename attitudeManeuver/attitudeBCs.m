@@ -2,8 +2,14 @@ function [BCs, pathCs] = attitudeBCs(x0BCs, x0, xfBCs, xf, xDotFun, tf)
 BCs = zeros(15,1);
 pathCs = zeros(2,1);
 
+if(nargin == 6)
+    collocation = 1;
+else
+    collocation = 0;
+end
+
 %% Allow for xDotFun collocation parameters
-if(nargin==6)
+if(collocation)
     xDotWrapper = @(tau, x) (xDotFun(tau, x, tf));
 else
     xDotWrapper = @(t,x) (xDotFun(t, x));
