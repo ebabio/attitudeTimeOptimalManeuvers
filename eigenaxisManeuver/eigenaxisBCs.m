@@ -2,7 +2,7 @@ function [BCs, pathCs] = eigenaxisBCs(x0BCs, x0, xfBCs, xf, xDotFun, tf)
 BCs = zeros(5,1);
 pathCs = zeros(2,1);
 
-% Allow for xDotFun parameters
+%% Allow for xDotFun collocation parameters
 if(nargin==6)
     xDotWrapper = @(tau, x) (xDotFun(tau, x, tf));
 else

@@ -60,7 +60,6 @@ maneuver.tf = solEigenaxis.parameters(1);
 maneuver.t = solEigenaxis.x * maneuver.tf;
 maneuver.x = solEigenaxis.y;
 
-
 %% Display results
 
 figure(1)
