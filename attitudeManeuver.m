@@ -16,7 +16,7 @@ clc
 
 % Initial / final conditions
 roll = 0;
-pitch  = deg2rad(10);
+pitch  = deg2rad(1);
 yaw = deg2rad(90);
 
 q0 = [1 0 0 0]';
@@ -92,6 +92,23 @@ f = shootingBCs(orbitFinal.x0, orbitFinal.xf);
 orbitFinal.x0(8:14)
 
 %% Evaluate the solution at all times
+
+% Initial guess
+maneuver0.t = orbit.t;
+maneuver0.x = orbit.x;
+
+maneuver0.q = maneuver0.x(1:4,:);
+maneuver0.eul = quat2eul(maneuver0.q')';
+maneuver0.omega = maneuver0.x(5:7,:);
+maneuver0.lambda_q =  maneuver0.x(8:11,:);
+maneuver0.lambda_omega =  maneuver0.x(12:14,:);
+
+maneuver0.u = zeros(3, numel(maneuver0.t));
+for i=1:numel(maneuver0.t)
+    maneuver0.u(:,i) = control(maneuver0.t, maneuver0.x(:,i));
+end
+
+% Final guess
 maneuver.time = orbitFinal.t;
 maneuver.x = orbitFinal.x;
 
@@ -101,9 +118,9 @@ maneuver.omega = maneuver.x(5:7,:);
 maneuver.lambda_q =  maneuver.x(8:11,:);
 maneuver.lambda_omega =  maneuver.x(12:14,:);
 
-maneuver.u = zeros(3, numel(maneuver.time));
-for i=1:numel(maneuver.time)
-    maneuver.u(:,i) = control(maneuver.time, maneuver.x(:,i));
+maneuver.u = zeros(3, numel(maneuver.t));
+for i=1:numel(maneuver.t)
+    maneuver.u(:,i) = control(maneuver.t, maneuver.x(:,i));
 end
 
 %% Plot data
@@ -112,18 +129,38 @@ figure(1)
 clf reset
 
 subplot(2,2,1)
-plot(maneuver.time, maneuver.eul)
+plot(maneuver0.t, maneuver0.eul)
 title('Euler Angles')
 legend('Yaw', 'Roll', 'Pitch')
 subplot(2,2,2)
-plot(maneuver.time, maneuver.omega)
+plot(maneuver0.t, maneuver0.omega)
 title('Angular Rates')
 legend('\omega_x', '\omega_y', '\omega_z')
 subplot(2,2,3)
-plot(maneuver.time, maneuver.u)
+plot(maneuver0.t, maneuver0.u)
 title('Torque input')
 legend('u_x', 'u_y', 'u_z')
 subplot(2,2,4)
-plot(maneuver.time, maneuver.lambda_omega)
+plot(maneuver0.t, maneuver0.lambda_omega)
+title('omegacostates')
+legend('\lambda_\omega_x', '\lambda_\omega_y', '\lambda_\omega_z')
+
+figure(2)
+clf reset
+
+subplot(2,2,1)
+plot(maneuver.t, maneuver.eul)
+title('Euler Angles')
+legend('Yaw', 'Roll', 'Pitch')
+subplot(2,2,2)
+plot(maneuver.t, maneuver.omega)
+title('Angular Rates')
+legend('\omega_x', '\omega_y', '\omega_z')
+subplot(2,2,3)
+plot(maneuver.t, maneuver.u)
+title('Torque input')
+legend('u_x', 'u_y', 'u_z')
+subplot(2,2,4)
+plot(maneuver.t, maneuver.lambda_omega)
 title('omegacostates')
 legend('\lambda_\omega_x', '\lambda_\omega_y', '\lambda_\omega_z')

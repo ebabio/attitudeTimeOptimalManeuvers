@@ -1,3 +1,5 @@
+function [BCs, pathCs] = attitudeBCs(x0BCs, x0, xfBCs, xf, xDotFun, tf)
+
 BCs = zeros(15,1);
 pathCs = zeros(2,1);
 
@@ -22,6 +24,7 @@ lambda_q0 = x0(8:12);
 lambda_omega0 = x0(13:14);
 
 % Hamiltonian
+xDot = xDotWrapper([],x0);
 H0 = [lambda_q0;lambda_omega0]' * xDot(1:7);
 
 BCs(1:7)  = [q0-x0BCs(1:4); omega0-x0BCs(5:7)];
@@ -35,6 +38,7 @@ lambda_qf = xf(8:12);
 lambda_omegaf = xf(13:14);
 
 % Hamiltonian
+xDot = xDotWrapper([],xf);
 Hf = [lambda_qf;lambda_omegaf]' * xDot(1:7);
 
 BCs(8:14)  = [qf-xfBCs(1:4); omegaf-xfBCs(5:7)];
