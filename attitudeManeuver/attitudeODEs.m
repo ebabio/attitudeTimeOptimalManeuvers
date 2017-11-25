@@ -15,7 +15,7 @@ u = control(t,x);
 qDot = 1/2 * quatmultiply(q, [0 omega]); % check derivation
 omegaDot = u;
 lambdaDot_q = 1/2 * quatmultiply(lambda_q, [0 omega]); % check derivation
-lambdaDot_omega = -1/2 * quatmultiply(quatconj(q), lambda_q); % check derivation
+lambdaDot_omega = 1/2 * quatmultiply(lambda_q, quatconj(q)); % check derivation
 
 % b. Element wise
 qDotEW(2) = 1/2 * ( omega(1)*q(1)   - omega(2)*q(4)     + omega(3)*q(3));
@@ -32,5 +32,5 @@ lambdaDot_qEW(3) = -1/2 * (lambda_q(2)*omega(3) -lambda_q(3)*0          - lambda
 lambdaDot_qEW(4) = -1/2 * (-lambda_q(2)*omega(2)+lambda_q(3)*omega(1)   + lambda_q(4)*0         - lambda_q(1)*omega(3));
 lambdaDot_qEW(1) = -1/2 * (lambda_q(2)*omega(1) +lambda_q(3)*omega(2)   + lambda_q(4)*omega(3)  - lambda_q(1)*0);
 
-dxdt = [qDotEW omegaDot lambdaDot_qEW lambdaDot_omegaEW]';
+dxdt = [qDot omegaDot lambdaDot_q lambdaDot_omega(2:4)]';
 return

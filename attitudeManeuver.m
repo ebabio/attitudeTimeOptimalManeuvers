@@ -2,7 +2,7 @@
 
 %% Script mode
 
-reuse = 0;
+reuse = 1
 %% Setup workspace
 addpath(genpath(pwd))
 if(reuse == 1 && exist('orbitFinal', 'var'))
@@ -16,7 +16,7 @@ clc
 
 % Initial / final conditions
 roll = 0;
-pitch  = deg2rad(1);
+pitch  = deg2rad(0.1);
 yaw = deg2rad(90);
 
 q0 = [1 0 0 0]';
@@ -33,7 +33,7 @@ if(exist('continuation', 'var') && exist('parameters', 'var') && continuation)
     parameters.lNorm = continuationCoefficient * parameters.lNorm;
     parameters.k = continuationCoefficient * parameters.k;
 else
-    parameters.lNorm = 2;
+    parameters.lNorm = 3;
     parameters.k = 5e1;
 end
 display(['Looking for optimal control with norm ' num2str(parameters.lNorm) ':'])
@@ -53,7 +53,7 @@ shootingBCs = @(x0, xf) (attitudeBCs(x0BCs, x0, xfBCs, xf, shootingOde));
 % 3. Shooting Algorithm
 bvpShooting = OrbitShooting();
 bvpShooting.epsilon = 1e-5;
-bvpShooting.nIntervals = 3;
+bvpShooting.nIntervals = 1;
 bvpShooting.k = .5;
 
 %% Initial solution
@@ -64,13 +64,13 @@ if(~exist('orbitFinal', 'var'))
     n = qf(2:4)/norm(qf(2:4));
     tf = 2*sqrt(thetaf);
     
-    lambda_q = -[0; n];
+    lambda_q = [0; n];
     lambda_omega = -tf/4*n;
     lambda0 = [lambda_q; lambda_omega];
     
     % First actual integration
     orbit.x0 = [ x0BCs; lambda0];
-    orbit.integrateX0(.9*tf);
+    orbit.integrateX0(.98*tf);
 else
     % Reuse previous solution as final guess
     orbit.x0 = orbitFinal.x0 + 0.01*randn(size(orbit.x0));
@@ -80,20 +80,23 @@ end
 
 %% Solve
 % 1. Test for initial guess (initial point BCs should be satisfied)
-f = shootingBCs(orbit.x0, orbit.xf);
+f0 = shootingBCs(orbit.x0, orbit.xf);
+orbit.x0(8:14)
 
 % 2. Iterate shooting
-tic
-[orbitFinal, count] = bvpShooting.target(shootingBCs, orbit, 8:15);
+try
+    tic
+    [orbitFinal, count] = bvpShooting.target(shootingBCs, orbit, 8:15);
+catch
+end
 toc
 
 % 3. Test for final guess (all BCs should be satisfied)
 f = shootingBCs(orbitFinal.x0, orbitFinal.xf);
 orbitFinal.x0(8:14)
 
-%% Evaluate the solution at all times
+%% Evaluate the initial solution at all times
 
-% Initial guess
 maneuver0.t = orbit.t;
 maneuver0.x = orbit.x;
 
@@ -108,8 +111,30 @@ for i=1:numel(maneuver0.t)
     maneuver0.u(:,i) = control(maneuver0.t, maneuver0.x(:,i));
 end
 
-% Final guess
-maneuver.time = orbitFinal.t;
+% plot Data
+figure(1)
+clf reset
+
+subplot(2,2,1)
+plot(maneuver0.t, maneuver0.eul)
+title('Euler Angles')
+legend('Yaw', 'Roll', 'Pitch', 'Location', 'best')
+subplot(2,2,2)
+plot(maneuver0.t, maneuver0.omega)
+title('Angular Rates')
+legend('\omega_x', '\omega_y', '\omega_z', 'Location', 'best')
+subplot(2,2,3)
+plot(maneuver0.t, maneuver0.u)
+title('Torque input')
+legend('u_x', 'u_y', 'u_z')
+subplot(2,2,4)
+plot(maneuver0.t, maneuver0.lambda_omega)
+title('omegacostates')
+legend('\lambda_\omega_x', '\lambda_\omega_y', '\lambda_\omega_z', 'Location', 'best')
+
+
+%% Evaluate the final solution at all times
+maneuver.t = orbitFinal.t;
 maneuver.x = orbitFinal.x;
 
 maneuver.q = maneuver.x(1:4,:);
@@ -123,44 +148,23 @@ for i=1:numel(maneuver.t)
     maneuver.u(:,i) = control(maneuver.t, maneuver.x(:,i));
 end
 
-%% Plot data
-
-figure(1)
-clf reset
-
-subplot(2,2,1)
-plot(maneuver0.t, maneuver0.eul)
-title('Euler Angles')
-legend('Yaw', 'Roll', 'Pitch')
-subplot(2,2,2)
-plot(maneuver0.t, maneuver0.omega)
-title('Angular Rates')
-legend('\omega_x', '\omega_y', '\omega_z')
-subplot(2,2,3)
-plot(maneuver0.t, maneuver0.u)
-title('Torque input')
-legend('u_x', 'u_y', 'u_z')
-subplot(2,2,4)
-plot(maneuver0.t, maneuver0.lambda_omega)
-title('omegacostates')
-legend('\lambda_\omega_x', '\lambda_\omega_y', '\lambda_\omega_z')
-
+%plot data
 figure(2)
 clf reset
 
 subplot(2,2,1)
 plot(maneuver.t, maneuver.eul)
 title('Euler Angles')
-legend('Yaw', 'Roll', 'Pitch')
+legend('Yaw', 'Roll', 'Pitch', 'Location', 'best')
 subplot(2,2,2)
 plot(maneuver.t, maneuver.omega)
 title('Angular Rates')
-legend('\omega_x', '\omega_y', '\omega_z')
+legend('\omega_x', '\omega_y', '\omega_z', 'Location', 'best')
 subplot(2,2,3)
 plot(maneuver.t, maneuver.u)
 title('Torque input')
-legend('u_x', 'u_y', 'u_z')
+legend('u_x', 'u_y', 'u_z', 'Location', 'best')
 subplot(2,2,4)
 plot(maneuver.t, maneuver.lambda_omega)
 title('omegacostates')
-legend('\lambda_\omega_x', '\lambda_\omega_y', '\lambda_\omega_z')
+legend('\lambda_\omega_x', '\lambda_\omega_y', '\lambda_\omega_z', 'Location', 'best')
