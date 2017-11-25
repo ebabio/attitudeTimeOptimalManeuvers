@@ -2,7 +2,7 @@
 
 %% Setup workspace
 addpath(genpath(pwd))
-clearvars all
+clear
 clc
 
 %% Setup initial conditions and guess
@@ -21,10 +21,10 @@ xfBCs = [thetaf; omegaf];
 parameters = 1e2;
 
 % First guess
-tf = 2*sqrt(thetaf) + 0.1*randn(1);
-lambda0 = -[2/tf; 1] + 0.1*randn(2,1);
+tf = 2*sqrt(thetaf) + 0.3*randn(1);
+lambda0 = -[2/tf; 1] + 0.3*randn(2,1);
 
-%% Setup 
+%% Setup
 
 % 1. Trajectory Integration routine
 
@@ -37,15 +37,33 @@ orbit.odeOptions = odeset('RelTol',1e-12,'AbsTol',1e-15);
 % 2. Boundary Conditions
 shootingBCs = @(x0, xf) (eigenaxisBCs(x0BCs, x0, xfBCs, xf, shootingOde));
 
-% 3. Shooting Algorithm
-bvpShooting = OrbitShooting();
-bvpShooting.epsilon = 1e-8;
-bvpShooting.nIntervals = 1;
+% 3. Optimizer setup
+fObjective = @(x) x(end);
 
-%% Test1: integration
+struct.nIntervals = 3;
+struct.setupOrbit = orbit;
+gConstraints = @(x) ( nonlconWrapper(x, shootingBCs, struct) );
 
+lb = [x0BCs - eps*ones(size(x0BCs)); -100*ones(size(lambda0)); xfBCs - eps*ones(size(x0BCs)); -100*ones(size(lambda0)); 0];
+ub = [x0BCs + eps*ones(size(x0BCs)); +100*ones(size(lambda0)); xfBCs + eps*ones(size(x0BCs)); +100*ones(size(lambda0)); 1.5*tf];
+%% Get initial guess
+% Compute one whole trajectory
 orbit.integrateX0(tf);
 
+% Setup independent shootings
+dim = numel(x0);
+tfVector = orbit.tf * (1:struct.nIntervals)./struct.nIntervals;
+for i=1:struct.nIntervals
+    if(i==1)
+        x0Opt = orbit.x0(1:dim);
+    else
+        index0 = (i-1)*dim;
+        x0Opt(index0+1:index0+dim) = deval(orbit.odeSol, tfVector(i-1));
+    end
+end
+x0Opt(end+1) = tf;
+
+% Display data
 figure(1)
 clf reset
 subplot(2,1,1)
@@ -56,14 +74,16 @@ plot(orbit.t, orbit.x(3:4,:))
 %% Test2: achieve targeting
 
 % 1. Test for initial guess (initial point BCs should be satisfied)
-f = shootingBCs(orbit.x0, orbit.xf);
+f = shootingBCs(orbit.x0, orbit.xf)
 
 % 2. Iterate shooting
 tic
-[orbit, count] = bvpShooting.target(shootingBCs, orbit, [3 4 5]);
+[xf, tf, exitflaf, output] = fmincon(fObjective, x0Opt, [], [], [], [], [], [], gConstraints)
 toc
 
 % 3. Test for final guess (all BCs should be satisfied)
+orbit.x0 = xf(1:4);
+orbit.integrateX0(tf);
 f = shootingBCs(orbit.x0, orbit.xf)
 
 figure(2)
