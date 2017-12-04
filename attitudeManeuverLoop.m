@@ -12,11 +12,10 @@ continuation = 1;
 parameters.lNorm = 2;
 
 while(parameters.lNorm < 20)
-    disp(' ')
     attitudeManeuver
-    
-    save([fileName ' Workspace'])
+    save([fileName 'lNorm' num2str(parameters.lNorm) ' Workspace'])
+    pause(.1);
 end
 
-display('continuation successfull finished')
+display('continuation successfully finished')
 diary off
