@@ -1,0 +1,2998 @@
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2:
+
+ans =
+
+   -0.0000
+   -0.0000
+   -0.0000
+    0.0000
+   -0.0000
+   -0.0000
+    0.0000
+    0.0128
+
+
+ans =
+
+         0
+    0.2506
+    0.0844
+   -0.9644
+    0.1603
+    0.0540
+   -0.6171
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.559558e+00    1.277e-02    2.847e-06
+    1      74    2.559553e+00    1.399e-03    1.361e-03    2.348e-02
+    2     111    2.559558e+00    1.320e-04    9.599e-05    6.022e-04
+    3     149    2.559558e+00    5.172e-05    3.263e-05    5.256e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',3.263183e-05,'selected',1.000000e+00,5.172207e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 11.051731 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0000
+    0.3021
+   -0.2112
+    0.0600
+    0.0959
+   -0.5749
+   -0.0251
+    0.0018
+
+
+ans =
+
+   -0.0006
+    0.2474
+    0.0833
+   -0.9523
+    0.1583
+    0.0533
+   -0.6093
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2.1:
+
+ans =
+
+   -0.0077
+   -0.0767
+    0.0501
+   -0.0142
+    0.0097
+    0.1703
+    0.0229
+    0.0000
+
+
+ans =
+
+   -0.0006
+    0.2474
+    0.0833
+   -0.9523
+    0.1583
+    0.0533
+   -0.6093
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.559558e+00    1.703e-01    2.797e-06
+    1      75    2.552298e+00    8.461e-02    1.804e-01    1.076e-01
+    2     113    2.551128e+00    4.239e-02    4.061e-01    4.098e-02
+    3     151    2.551097e+00    2.128e-02    3.446e-01    2.148e-02
+    4     189    2.551210e+00    1.069e-02    3.295e-01    1.058e-02
+    5     227    2.551302e+00    5.368e-03    3.243e-01    5.258e-03
+    6     265    2.551358e+00    2.697e-03    3.222e-01    2.624e-03
+    7     303    2.551389e+00    1.355e-03    3.212e-01    1.311e-03
+    8     341    2.551406e+00    6.807e-04    3.207e-01    6.554e-04
+    9     379    2.551414e+00    3.420e-04    3.204e-01    3.276e-04
+   10     417    2.551419e+00    1.718e-04    3.203e-01    1.637e-04
+   11     455    2.551421e+00    8.634e-05    3.202e-01    8.177e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',3.202472e-01,'selected',1.000000e+00,8.633742e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 49.833139 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0208
+   -0.3942
+    0.2174
+   -0.0632
+   -0.0143
+    0.8563
+    0.1282
+    0.0130
+
+
+ans =
+
+   -0.0362
+    0.2396
+    0.0448
+   -0.9577
+    0.1486
+    0.0342
+   -0.6116
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2.2:
+
+ans =
+
+   -0.0069
+   -0.0764
+    0.0598
+   -0.0148
+    0.0184
+    0.1816
+    0.0219
+    0.0000
+
+
+ans =
+
+   -0.0362
+    0.2396
+    0.0448
+   -0.9577
+    0.1486
+    0.0342
+   -0.6116
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.551421e+00    1.816e-01    8.397e-08
+    1      75    2.544933e+00    9.031e-02    2.912e-01    8.549e-02
+    2     113    2.544063e+00    4.521e-02    2.699e-01    4.405e-02
+    3     151    2.544106e+00    2.267e-02    2.712e-01    2.149e-02
+    4     189    2.544254e+00    1.138e-02    2.739e-01    1.070e-02
+    5     227    2.544362e+00    5.714e-03    2.756e-01    5.241e-03
+    6     265    2.544425e+00    2.870e-03    2.765e-01    2.609e-03
+    7     303    2.544459e+00    1.442e-03    2.770e-01    1.303e-03
+    8     341    2.544477e+00    7.244e-04    2.773e-01    6.513e-04
+    9     379    2.544486e+00    3.640e-04    2.774e-01    3.254e-04
+   10     417    2.544491e+00    1.829e-04    2.774e-01    1.625e-04
+   11     455    2.544493e+00    9.187e-05    2.775e-01    8.109e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.774570e-01,'selected',1.000000e+00,9.186802e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 53.969411 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0157
+   -0.3497
+    0.2215
+   -0.0563
+    0.0225
+    0.8147
+    0.1130
+    0.0051
+
+
+ans =
+
+   -0.0322
+    0.2310
+    0.0115
+   -0.9623
+    0.1397
+    0.0184
+   -0.6134
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2.3:
+
+ans =
+
+   -0.0057
+   -0.0714
+    0.0681
+   -0.0141
+    0.0318
+    0.1848
+    0.0211
+    0.0000
+
+
+ans =
+
+   -0.0322
+    0.2310
+    0.0115
+   -0.9623
+    0.1397
+    0.0184
+   -0.6134
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.544493e+00    1.848e-01    5.563e-07
+    1      75    2.538768e+00    9.176e-02    1.964e-01    8.339e-02
+    2     113    2.538057e+00    4.619e-02    2.216e-01    1.185e-01
+    3     151    2.538123e+00    2.318e-02    2.357e-01    2.577e-02
+    4     189    2.538267e+00    1.163e-02    2.428e-01    1.142e-02
+    5     227    2.538366e+00    5.843e-03    2.463e-01    5.486e-03
+    6     265    2.538424e+00    2.935e-03    2.481e-01    2.708e-03
+    7     303    2.538455e+00    1.474e-03    2.490e-01    1.348e-03
+    8     341    2.538471e+00    7.406e-04    2.494e-01    6.732e-04
+    9     379    2.538479e+00    3.720e-04    2.496e-01    3.364e-04
+   10     417    2.538483e+00    1.869e-04    2.497e-01    1.681e-04
+   11     455    2.538485e+00    9.390e-05    2.498e-01    8.397e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.497783e-01,'selected',1.000000e+00,9.389776e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 59.914964 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0091
+   -0.2568
+    0.2116
+   -0.0394
+    0.1034
+    0.6883
+    0.1003
+    0.0463
+
+
+ans =
+
+    0.0409
+    0.2210
+   -0.0168
+   -0.9654
+    0.1315
+    0.0056
+   -0.6143
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2.4:
+
+ans =
+
+   -0.0040
+   -0.0601
+    0.0726
+   -0.0118
+    0.0488
+    0.1753
+    0.0201
+    0.0000
+
+
+ans =
+
+    0.0409
+    0.2210
+   -0.0168
+   -0.9654
+    0.1315
+    0.0056
+   -0.6143
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.538485e+00    1.753e-01    5.874e-06
+    1      75    2.533564e+00    8.635e-02    1.484e-01    2.952e-01
+    2     113    2.532835e+00    4.311e-02    1.914e-01    6.993e-02
+    3     151    2.532854e+00    2.159e-02    2.119e-01    3.106e-02
+    4     189    2.532962e+00    1.083e-02    2.217e-01    1.478e-02
+    5     227    2.533041e+00    5.434e-03    2.265e-01    7.252e-03
+    6     265    2.533088e+00    2.729e-03    2.289e-01    3.603e-03
+    7     303    2.533113e+00    1.371e-03    2.300e-01    1.798e-03
+    8     341    2.533126e+00    6.886e-04    2.306e-01    8.988e-04
+    9     379    2.533132e+00    3.460e-04    2.309e-01    4.491e-04
+   10     417    2.533136e+00    1.738e-04    2.311e-01    2.243e-04
+   11     455    2.533137e+00    8.732e-05    2.312e-01    1.120e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.311642e-01,'selected',1.000000e+00,8.732355e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 74.061825 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0000
+   -0.2428
+    0.3104
+   -0.0359
+    0.2351
+    0.7531
+    0.1064
+    0.1540
+
+
+ans =
+
+   -0.1759
+    0.2053
+   -0.0390
+   -0.9542
+    0.1223
+   -0.0034
+   -0.6059
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2.5:
+
+ans =
+
+   -0.0014
+   -0.0362
+    0.0644
+   -0.0063
+    0.0656
+    0.1342
+    0.0172
+    0.0000
+
+
+ans =
+
+   -0.1759
+    0.2053
+   -0.0390
+   -0.9542
+    0.1223
+   -0.0034
+   -0.6059
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.533137e+00    1.342e-01    1.027e-05
+    1      75    2.529217e+00    6.819e-02    1.159e-01    3.119e-01
+    2     113    2.528316e+00    3.428e-02    1.607e-01    1.286e-01
+    3     151    2.528162e+00    1.720e-02    1.809e-01    5.483e-02
+    4     189    2.528161e+00    8.633e-03    1.906e-01    2.551e-02
+    5     227    2.528180e+00    4.334e-03    1.953e-01    1.241e-02
+    6     265    2.528195e+00    2.177e-03    1.976e-01    6.158e-03
+    7     303    2.528204e+00    1.093e-03    1.988e-01    3.078e-03
+    8     341    2.528208e+00    5.493e-04    1.994e-01    1.542e-03
+    9     379    2.528211e+00    2.760e-04    1.997e-01    7.726e-04
+   10     417    2.528212e+00    1.386e-04    1.998e-01    3.871e-04
+   11     455    2.528213e+00    6.966e-05    1.999e-01    1.939e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.999208e-01,'selected',1.000000e+00,6.965627e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 76.839117 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0030
+   -0.2885
+    0.3922
+   -0.0436
+    0.2976
+    0.9026
+    0.1039
+    0.2432
+
+
+ans =
+
+    0.1242
+    0.1932
+   -0.0584
+   -0.9645
+    0.1164
+   -0.0101
+   -0.6112
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2.7:
+
+ans =
+
+   -0.0032
+   -0.0439
+    0.1274
+   -0.0101
+    0.1534
+    0.2205
+    0.0349
+    0.0000
+
+
+ans =
+
+    0.1242
+    0.1932
+   -0.0584
+   -0.9645
+    0.1164
+   -0.0101
+   -0.6112
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.528213e+00    2.205e-01    1.153e-05
+    1      75    2.519413e+00    1.557e-01    1.843e-01    1.014e+00
+    2     112    2.516672e+00    1.276e-02    3.445e-01    3.233e-01
+    3     150    2.517972e+00    6.584e-03    3.298e-01    1.235e-01
+    4     188    2.518628e+00    3.342e-03    3.234e-01    6.650e-02
+    5     226    2.518957e+00    1.686e-03    3.204e-01    3.433e-02
+    6     264    2.519122e+00    8.485e-04    3.191e-01    1.727e-02
+    7     302    2.519205e+00    4.265e-04    3.184e-01    8.566e-03
+    8     340    2.519247e+00    2.143e-04    3.181e-01    4.217e-03
+    9     378    2.519267e+00    1.076e-04    3.180e-01    2.065e-03
+   10     416    2.519278e+00    5.405e-05    3.179e-01    1.007e-03
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',3.179265e-01,'selected',1.000000e+00,5.405015e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 70.736955 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0342
+   -0.3057
+   -0.0080
+   -0.0470
+   -0.6586
+    0.2804
+    0.0486
+    0.5185
+
+
+ans =
+
+   -0.2924
+    0.1617
+   -0.0881
+   -0.9331
+    0.1002
+   -0.0202
+   -0.5893
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 2.9:
+
+ans =
+
+    0.0020
+   -0.0072
+    0.1009
+   -0.0022
+    0.1619
+    0.1384
+    0.0251
+    0.0001
+
+
+ans =
+
+   -0.2924
+    0.1617
+   -0.0881
+   -0.9331
+    0.1002
+   -0.0202
+   -0.5893
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.519278e+00    1.619e-01    1.830e-05
+    1      75    2.512733e+00    8.261e-02    1.365e-01    7.151e-01
+    2     113    2.511301e+00    5.390e-02    1.913e-01    3.068e-01
+    3     151    2.511144e+00    2.894e-02    2.173e-01    1.212e-01
+    4     189    2.511194e+00    1.480e-02    2.296e-01    4.952e-02
+    5     227    2.511250e+00    7.480e-03    2.355e-01    2.236e-02
+    6     265    2.511286e+00    3.768e-03    2.385e-01    1.075e-02
+    7     303    2.511307e+00    1.896e-03    2.400e-01    5.319e-03
+    8     341    2.511318e+00    9.532e-04    2.407e-01    2.661e-03
+    9     379    2.511323e+00    4.791e-04    2.411e-01    1.337e-03
+   10     417    2.511327e+00    2.408e-04    2.413e-01    6.732e-04
+   11     455    2.511328e+00    1.210e-04    2.414e-01    3.392e-04
+   12     493    2.511329e+00    6.081e-05    2.414e-01    1.710e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.414337e-01,'selected',1.000000e+00,6.081192e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 83.635641 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0122
+   -0.0714
+    0.2604
+   -0.0076
+    0.3638
+    0.4390
+    0.0724
+    0.6081
+
+
+ans =
+
+    0.3443
+    0.1374
+   -0.1127
+   -0.9177
+    0.0882
+   -0.0280
+   -0.5781
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 3.1:
+
+ans =
+
+    0.0043
+    0.0094
+    0.0847
+    0.0005
+    0.1595
+    0.0953
+    0.0191
+    0.0001
+
+
+ans =
+
+    0.3443
+    0.1374
+   -0.1127
+   -0.9177
+    0.0882
+   -0.0280
+   -0.5781
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.511329e+00    1.595e-01    2.905e-05
+    1      75    2.505954e+00    8.902e-02    9.291e-02    7.587e-01
+    2     113    2.504499e+00    6.406e-02    1.393e-01    3.624e-01
+    3     151    2.504199e+00    3.459e-02    1.634e-01    1.391e-01
+    4     189    2.504146e+00    1.760e-02    1.751e-01    5.053e-02
+    5     227    2.504142e+00    8.869e-03    1.807e-01    2.103e-02
+    6     265    2.504147e+00    4.460e-03    1.845e-01    9.803e-03
+    7     303    2.504152e+00    2.242e-03    1.868e-01    4.802e-03
+    8     341    2.504154e+00    1.127e-03    1.879e-01    2.398e-03
+    9     379    2.504156e+00    5.663e-04    1.885e-01    1.207e-03
+   10     417    2.504157e+00    2.846e-04    1.888e-01    6.100e-04
+   11     455    2.504158e+00    1.430e-04    1.889e-01    3.088e-04
+   12     493    2.504158e+00    7.187e-05    1.890e-01    1.566e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.889814e-01,'selected',1.000000e+00,7.186680e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 88.454538 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0110
+   -0.0358
+    0.2114
+   -0.0015
+    0.3423
+    0.3186
+    0.0564
+    0.7187
+
+
+ans =
+
+   -0.3397
+    0.1186
+   -0.1354
+   -0.9198
+    0.0795
+   -0.0346
+   -0.5783
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 3.3:
+
+ans =
+
+    0.0056
+    0.0186
+    0.0725
+    0.0017
+    0.1537
+    0.0675
+    0.0147
+    0.0001
+
+
+ans =
+
+   -0.3397
+    0.1186
+   -0.1354
+   -0.9198
+    0.0795
+   -0.0346
+   -0.5783
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.504158e+00    1.537e-01    2.325e-05
+    1      75    2.499543e+00    7.766e-02    8.116e-02    4.389e-01
+    2     113    2.498231e+00    3.824e-02    1.120e-01    2.054e-01
+    3     151    2.497857e+00    1.891e-02    1.323e-01    8.929e-02
+    4     189    2.497737e+00    9.411e-03    1.466e-01    3.954e-02
+    5     227    2.497693e+00    4.705e-03    1.541e-01    1.868e-02
+    6     265    2.497676e+00    2.357e-03    1.579e-01    9.156e-03
+    7     303    2.497668e+00    1.183e-03    1.598e-01    4.557e-03
+    8     341    2.497665e+00    5.938e-04    1.608e-01    2.280e-03
+    9     379    2.497664e+00    2.982e-04    1.613e-01    1.142e-03
+   10     417    2.497663e+00    1.498e-04    1.615e-01    5.724e-04
+   11     455    2.497663e+00    7.523e-05    1.617e-01    2.868e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.616604e-01,'selected',1.000000e+00,7.522994e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 82.504697 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0345
+    0.0332
+    0.3937
+    0.0096
+    0.7400
+    0.4481
+    0.0892
+    0.5323
+
+
+ans =
+
+    0.1003
+    0.1079
+   -0.1638
+   -0.9725
+    0.0759
+   -0.0424
+   -0.6107
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 3.5:
+
+ans =
+
+    0.0065
+    0.0239
+    0.0633
+    0.0022
+    0.1473
+    0.0486
+    0.0114
+    0.0001
+
+
+ans =
+
+    0.1003
+    0.1079
+   -0.1638
+   -0.9725
+    0.0759
+   -0.0424
+   -0.6107
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.497663e+00    1.473e-01    1.152e-05
+    1      75    2.493623e+00    7.117e-02    6.697e-02    1.670e-01
+    2     113    2.492445e+00    3.484e-02    1.045e-01    7.534e-02
+    3     151    2.492045e+00    1.725e-02    1.263e-01    3.639e-02
+    4     189    2.491888e+00    8.599e-03    1.377e-01    1.778e-02
+    5     227    2.491821e+00    4.303e-03    1.436e-01    8.710e-03
+    6     265    2.491789e+00    2.157e-03    1.466e-01    4.320e-03
+    7     303    2.491774e+00    1.082e-03    1.481e-01    2.156e-03
+    8     341    2.491767e+00    5.434e-04    1.488e-01    1.078e-03
+    9     379    2.491763e+00    2.729e-04    1.492e-01    5.391e-04
+   10     417    2.491761e+00    1.371e-04    1.494e-01    2.696e-04
+   11     455    2.491761e+00    6.884e-05    1.495e-01    1.348e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.494946e-01,'selected',1.000000e+00,6.883872e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 85.333072 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0344
+    0.0661
+    0.3211
+    0.0119
+    0.6687
+    0.3133
+    0.0635
+    0.0725
+
+
+ans =
+
+   -0.0652
+    0.0928
+   -0.1821
+   -0.9743
+    0.0691
+   -0.0473
+   -0.6112
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 3.7:
+
+ans =
+
+    0.0070
+    0.0270
+    0.0560
+    0.0023
+    0.1409
+    0.0354
+    0.0089
+    0.0000
+
+
+ans =
+
+   -0.0652
+    0.0928
+   -0.1821
+   -0.9743
+    0.0691
+   -0.0473
+   -0.6112
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.491761e+00    1.409e-01    1.328e-06
+    1      75    2.488189e+00    6.801e-02    6.208e-02    6.222e-02
+    2     113    2.487095e+00    3.338e-02    9.896e-02    2.706e-02
+    3     151    2.486695e+00    1.656e-02    1.192e-01    1.277e-02
+    4     189    2.486528e+00    8.262e-03    1.299e-01    6.058e-03
+    5     227    2.486452e+00    4.135e-03    1.354e-01    2.976e-03
+    6     265    2.486416e+00    2.073e-03    1.382e-01    1.480e-03
+    7     303    2.486399e+00    1.040e-03    1.396e-01    7.390e-04
+    8     341    2.486390e+00    5.224e-04    1.403e-01    3.694e-04
+    9     379    2.486386e+00    2.623e-04    1.406e-01    1.846e-04
+   10     417    2.486384e+00    1.317e-04    1.408e-01    9.225e-05
+   11     455    2.486383e+00    6.616e-05    1.409e-01    4.607e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.409141e-01,'selected',1.000000e+00,6.616204e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 85.156050 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0358
+    0.0911
+    0.2784
+    0.0133
+    0.6333
+    0.2254
+    0.0491
+    0.0029
+
+
+ans =
+
+   -0.0415
+    0.0796
+   -0.1980
+   -0.9740
+    0.0630
+   -0.0514
+   -0.6106
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 3.9:
+
+ans =
+
+    0.0073
+    0.0287
+    0.0501
+    0.0023
+    0.1351
+    0.0259
+    0.0070
+    0.0000
+
+
+ans =
+
+   -0.0415
+    0.0796
+   -0.1980
+   -0.9740
+    0.0630
+   -0.0514
+   -0.6106
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.486383e+00    1.351e-01    7.229e-07
+    1      75    2.483200e+00    6.483e-02    6.008e-02    5.272e-02
+    2     113    2.482183e+00    3.172e-02    9.550e-02    2.303e-02
+    3     151    2.481792e+00    1.565e-02    1.151e-01    1.119e-02
+    4     189    2.481622e+00    7.805e-03    1.252e-01    5.445e-03
+    5     227    2.481543e+00    3.907e-03    1.303e-01    2.711e-03
+    6     265    2.481505e+00    1.959e-03    1.330e-01    1.355e-03
+    7     303    2.481486e+00    9.833e-04    1.343e-01    6.788e-04
+    8     341    2.481477e+00    4.938e-04    1.350e-01    3.403e-04
+    9     379    2.481473e+00    2.480e-04    1.353e-01    1.707e-04
+   10     417    2.481470e+00    1.246e-04    1.355e-01    8.568e-05
+   11     455    2.481469e+00    6.258e-05    1.356e-01    4.300e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.355668e-01,'selected',1.000000e+00,6.257935e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 84.171824 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0369
+    0.1043
+    0.2475
+    0.0130
+    0.6037
+    0.1717
+    0.0382
+    0.0012
+
+
+ans =
+
+   -0.0484
+    0.0683
+   -0.2117
+   -0.9720
+    0.0577
+   -0.0548
+   -0.6091
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 4.2:
+
+ans =
+
+    0.0099
+    0.0406
+    0.0656
+    0.0024
+    0.1831
+    0.0298
+    0.0085
+    0.0000
+
+
+ans =
+
+   -0.0484
+    0.0683
+   -0.2117
+   -0.9720
+    0.0577
+   -0.0548
+   -0.6091
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.481469e+00    1.831e-01    4.270e-07
+    1      75    2.476855e+00    8.535e-02    8.918e-02    7.236e-02
+    2     113    2.475611e+00    4.118e-02    1.454e-01    2.797e-02
+    3     151    2.475179e+00    2.021e-02    1.783e-01    1.324e-02
+    4     189    2.475002e+00    1.002e-02    1.965e-01    6.490e-03
+    5     227    2.474922e+00    5.000e-03    2.060e-01    3.220e-03
+    6     265    2.474884e+00    2.503e-03    2.109e-01    1.606e-03
+    7     303    2.474866e+00    1.255e-03    2.134e-01    8.030e-04
+    8     341    2.474857e+00    6.296e-04    2.147e-01    4.016e-04
+    9     379    2.474853e+00    3.161e-04    2.154e-01    2.009e-04
+   10     417    2.474851e+00    1.587e-04    2.157e-01    1.005e-04
+   11     455    2.474850e+00    7.969e-05    2.158e-01    5.024e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.158431e-01,'selected',1.000000e+00,7.969462e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 86.900451 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0481
+    0.1248
+    0.3163
+    0.0135
+    0.7697
+    0.2289
+    0.0465
+    0.0022
+
+
+ans =
+
+   -0.0473
+    0.0549
+   -0.2292
+   -0.9693
+    0.0515
+   -0.0589
+   -0.6070
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 4.5:
+
+ans =
+
+    0.0101
+    0.0409
+    0.0569
+    0.0022
+    0.1733
+    0.0192
+    0.0061
+    0.0000
+
+
+ans =
+
+   -0.0473
+    0.0549
+   -0.2292
+   -0.9693
+    0.0515
+   -0.0589
+   -0.6070
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.474850e+00    1.733e-01    8.281e-07
+    1      75    2.470910e+00    7.980e-02    8.985e-02    6.107e-02
+    2     113    2.469783e+00    3.792e-02    1.517e-01    2.515e-02
+    3     151    2.469352e+00    1.837e-02    1.919e-01    1.214e-02
+    4     189    2.469161e+00    9.017e-03    2.166e-01    6.029e-03
+    5     227    2.469069e+00    4.468e-03    2.308e-01    3.046e-03
+    6     265    2.469025e+00    2.226e-03    2.386e-01    1.545e-03
+    7     303    2.469003e+00    1.113e-03    2.428e-01    7.810e-04
+    8     341    2.468992e+00    5.575e-04    2.449e-01    3.929e-04
+    9     379    2.468987e+00    2.795e-04    2.460e-01    1.969e-04
+   10     417    2.468984e+00    1.402e-04    2.466e-01    9.836e-05
+   11     455    2.468983e+00    7.034e-05    2.468e-01    4.905e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.468344e-01,'selected',1.000000e+00,7.034360e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 91.251215 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0484
+    0.1409
+    0.2707
+    0.0133
+    0.7007
+    0.1533
+    0.0327
+    0.0016
+
+
+ans =
+
+   -0.0502
+    0.0463
+   -0.2435
+   -0.9663
+    0.0475
+   -0.0619
+   -0.6049
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 4.8:
+
+ans =
+
+    0.0099
+    0.0392
+    0.0498
+    0.0020
+    0.1661
+    0.0134
+    0.0045
+    0.0000
+
+
+ans =
+
+   -0.0502
+    0.0463
+   -0.2435
+   -0.9663
+    0.0475
+   -0.0619
+   -0.6049
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.468983e+00    1.661e-01    1.398e-06
+    1      75    2.465546e+00    7.338e-02    1.042e-01    5.456e-02
+    2     113    2.464533e+00    2.709e-02    3.676e-01    2.173e-02
+    3     151    2.464106e+00    1.358e-02    3.884e-01    1.598e-02
+    4     189    2.463890e+00    6.801e-03    3.971e-01    7.123e-03
+    5     227    2.463781e+00    3.410e-03    4.012e-01    3.622e-03
+    6     265    2.463727e+00    1.711e-03    4.032e-01    1.840e-03
+    7     303    2.463699e+00    8.592e-04    4.042e-01    9.278e-04
+    8     341    2.463686e+00    4.316e-04    4.047e-01    4.661e-04
+    9     379    2.463679e+00    2.168e-04    4.049e-01    2.337e-04
+   10     417    2.463676e+00    1.089e-04    4.051e-01    1.170e-04
+   11     455    2.463674e+00    5.473e-05    4.051e-01    5.853e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',4.051222e-01,'selected',1.000000e+00,5.472835e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 111.343232 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0462
+    0.1416
+    0.2300
+    0.0121
+    0.5985
+    0.1062
+    0.0223
+    0.0026
+
+
+ans =
+
+   -0.0461
+    0.0471
+   -0.2540
+   -0.9638
+    0.0479
+   -0.0633
+   -0.6028
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 5.1:
+
+ans =
+
+    0.0090
+    0.0339
+    0.0433
+    0.0017
+    0.1672
+    0.0137
+    0.0036
+    0.0000
+
+
+ans =
+
+   -0.0461
+    0.0471
+   -0.2540
+   -0.9638
+    0.0479
+   -0.0633
+   -0.6028
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.463674e+00    1.672e-01    1.265e-06
+    1      75    2.460497e+00    4.768e-02    3.066e-01    5.290e-02
+    2     113    2.459649e+00    2.385e-02    3.286e-01    2.427e-02
+    3     151    2.459212e+00    1.196e-02    3.390e-01    1.182e-02
+    4     189    2.458991e+00    6.006e-03    3.441e-01    5.812e-03
+    5     227    2.458880e+00    3.018e-03    3.467e-01    2.907e-03
+    6     265    2.458824e+00    1.517e-03    3.479e-01    1.461e-03
+    7     303    2.458796e+00    7.623e-04    3.486e-01    7.334e-04
+    8     341    2.458782e+00    3.831e-04    3.489e-01    3.677e-04
+    9     379    2.458775e+00    1.925e-04    3.491e-01    1.843e-04
+   10     417    2.458772e+00    9.673e-05    3.492e-01    9.227e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',3.491629e-01,'selected',1.000000e+00,9.673305e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 101.494322 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0744
+    0.2262
+    0.3708
+    0.0190
+    0.8971
+    0.1979
+    0.0348
+    0.0064
+
+
+ans =
+
+   -0.0477
+    0.0494
+   -0.2626
+   -0.9612
+    0.0489
+   -0.0642
+   -0.6007
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 5.5:
+
+ans =
+
+    0.0099
+    0.0367
+    0.0489
+    0.0015
+    0.2056
+    0.0194
+    0.0041
+    0.0000
+
+
+ans =
+
+   -0.0477
+    0.0494
+   -0.2626
+   -0.9612
+    0.0489
+   -0.0642
+   -0.6007
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.458772e+00    2.056e-01    1.421e-06
+    1      75    2.454705e+00    2.111e-02    4.447e-01    6.901e-02
+    2     113    2.453805e+00    1.057e-02    4.274e-01    3.623e-02
+    3     151    2.453313e+00    5.296e-03    4.192e-01    1.546e-02
+    4     189    2.453058e+00    2.655e-03    4.151e-01    7.579e-03
+    5     227    2.452928e+00    1.331e-03    4.131e-01    3.841e-03
+    6     265    2.452862e+00    6.674e-04    4.120e-01    1.936e-03
+    7     303    2.452830e+00    3.346e-04    4.115e-01    9.729e-04
+    8     341    2.452813e+00    1.677e-04    4.112e-01    4.880e-04
+    9     379    2.452805e+00    8.405e-05    4.111e-01    2.446e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',4.111206e-01,'selected',1.000000e+00,8.404675e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 94.127867 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0928
+    0.2238
+    0.6244
+    0.0228
+   -0.5942
+    0.6041
+    0.0798
+    0.0358
+
+
+ans =
+
+   -0.0343
+    0.0521
+   -0.2726
+   -0.9588
+    0.0501
+   -0.0653
+   -0.5986
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 5.9:
+
+ans =
+
+    0.0087
+    0.0311
+    0.0420
+    0.0013
+    0.2082
+    0.0190
+    0.0032
+    0.0000
+
+
+ans =
+
+   -0.0343
+    0.0521
+   -0.2726
+   -0.9588
+    0.0501
+   -0.0653
+   -0.5986
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.452805e+00    2.082e-01    6.814e-07
+    1      75    2.449184e+00    4.338e-02    4.392e-01    6.786e-02
+    2     113    2.448287e+00    2.245e-02    3.943e-01    3.178e-02
+    3     151    2.447842e+00    1.142e-02    3.710e-01    1.489e-02
+    4     189    2.447623e+00    5.763e-03    3.592e-01    7.252e-03
+    5     227    2.447515e+00    2.900e-03    3.533e-01    3.595e-03
+    6     265    2.447461e+00    1.457e-03    3.503e-01    1.793e-03
+    7     303    2.447434e+00    7.313e-04    3.488e-01    8.971e-04
+    8     341    2.447421e+00    3.670e-04    3.480e-01    4.495e-04
+    9     379    2.447414e+00    1.842e-04    3.476e-01    2.253e-04
+   10     417    2.447411e+00    9.239e-05    3.474e-01    1.130e-04
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',3.474253e-01,'selected',1.000000e+00,9.239217e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 104.127180 seconds.
+
+f =
+
+   1.0e-03 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0006
+   -0.0023
+    0.0157
+    0.0002
+   -0.1438
+    0.0295
+    0.0036
+    0.0018
+
+
+ans =
+
+   -0.0382
+    0.0544
+   -0.2809
+   -0.9561
+    0.0511
+   -0.0661
+   -0.5963
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 6.3:
+
+ans =
+
+    0.0078
+    0.0270
+    0.0367
+    0.0012
+    0.2113
+    0.0181
+    0.0026
+    0.0000
+
+
+ans =
+
+   -0.0382
+    0.0544
+   -0.2809
+   -0.9561
+    0.0511
+   -0.0661
+   -0.5963
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.447411e+00    2.113e-01    1.361e-06
+    1      75    2.444226e+00    5.944e-02    4.027e-01    6.121e-02
+    2     113    2.443328e+00    3.032e-02    3.500e-01    2.934e-02
+    3     151    2.442916e+00    1.534e-02    3.232e-01    1.348e-02
+    4     189    2.442720e+00    7.729e-03    3.096e-01    6.510e-03
+    5     227    2.442626e+00    3.887e-03    3.028e-01    3.201e-03
+    6     265    2.442579e+00    1.953e-03    2.994e-01    1.592e-03
+    7     303    2.442555e+00    9.808e-04    2.977e-01    7.965e-04
+    8     341    2.442544e+00    4.924e-04    2.968e-01    3.998e-04
+    9     379    2.442538e+00    2.471e-04    2.964e-01    2.010e-04
+   10     417    2.442535e+00    1.240e-04    2.962e-01    1.012e-04
+   11     455    2.442533e+00    6.226e-05    2.961e-01    5.096e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.960799e-01,'selected',1.000000e+00,6.225503e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 113.922092 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0026
+   -0.0313
+    0.0492
+   -0.0014
+   -0.8292
+    0.1372
+    0.0166
+    0.0083
+
+
+ans =
+
+   -0.0350
+    0.0564
+   -0.2882
+   -0.9539
+    0.0519
+   -0.0669
+   -0.5944
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 6.8:
+
+ans =
+
+    0.0082
+    0.0282
+    0.0392
+    0.0011
+    0.2379
+    0.0212
+    0.0027
+    0.0000
+
+
+ans =
+
+   -0.0350
+    0.0564
+   -0.2882
+   -0.9539
+    0.0519
+   -0.0669
+   -0.5944
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.442533e+00    2.379e-01    1.314e-06
+    1      75    2.438937e+00    8.270e-02    4.556e-01    6.688e-02
+    2     113    2.437893e+00    4.211e-02    3.867e-01    3.270e-02
+    3     151    2.437450e+00    2.130e-02    3.520e-01    1.440e-02
+    4     189    2.437251e+00    1.074e-02    3.346e-01    6.830e-03
+    5     227    2.437158e+00    5.403e-03    3.258e-01    3.372e-03
+    6     265    2.437112e+00    2.715e-03    3.214e-01    1.702e-03
+    7     303    2.437090e+00    1.364e-03    3.192e-01    8.653e-04
+    8     341    2.437079e+00    6.850e-04    3.181e-01    4.401e-04
+    9     379    2.437073e+00    3.439e-04    3.175e-01    2.237e-04
+   10     417    2.437070e+00    1.727e-04    3.172e-01    1.138e-04
+   11     455    2.437069e+00    8.669e-05    3.171e-01    5.794e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',3.170883e-01,'selected',1.000000e+00,8.668749e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 115.491867 seconds.
+
+f =
+
+   1.0e-03 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0014
+   -0.0076
+    0.0019
+   -0.0005
+   -0.1105
+    0.0164
+    0.0019
+    0.0010
+
+
+ans =
+
+   -0.0320
+    0.0585
+   -0.2959
+   -0.9514
+    0.0527
+   -0.0676
+   -0.5923
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 7.3:
+
+ans =
+
+    0.0073
+    0.0248
+    0.0343
+    0.0010
+    0.2177
+    0.0193
+    0.0021
+    0.0000
+
+
+ans =
+
+   -0.0320
+    0.0585
+   -0.2959
+   -0.9514
+    0.0527
+   -0.0676
+   -0.5923
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.437069e+00    2.177e-01    6.200e-06
+    1      75    2.434032e+00    1.100e-01    1.297e-01    2.890e-02
+    2     113    2.432945e+00    5.590e-02    1.965e-01    1.141e-02
+    3     151    2.432528e+00    2.826e-02    2.311e-01    5.488e-03
+    4     189    2.432354e+00    1.424e-02    2.487e-01    2.719e-03
+    5     227    2.432277e+00    7.161e-03    2.576e-01    1.353e-03
+    6     265    2.432240e+00    3.598e-03    2.621e-01    6.755e-04
+    7     303    2.432223e+00    1.807e-03    2.644e-01    3.379e-04
+    8     341    2.432214e+00    9.076e-04    2.655e-01    1.692e-04
+    9     379    2.432210e+00    4.557e-04    2.661e-01    8.479e-05
+   10     417    2.432208e+00    2.288e-04    2.664e-01    4.251e-05
+   11     455    2.432207e+00    1.149e-04    2.665e-01    2.131e-05
+   12     493    2.432206e+00    5.767e-05    2.666e-01    1.069e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.665847e-01,'selected',1.000000e+00,5.767367e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 129.161904 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0175
+    0.0513
+    0.0762
+    0.0031
+    0.5740
+    0.0487
+    0.0050
+    0.0002
+
+
+ans =
+
+   -0.0297
+    0.0603
+   -0.3025
+   -0.9493
+    0.0533
+   -0.0683
+   -0.5905
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 7.8:
+
+ans =
+
+    0.0065
+    0.0217
+    0.0301
+    0.0009
+    0.1848
+    0.0175
+    0.0017
+    0.0000
+
+
+ans =
+
+   -0.0297
+    0.0603
+   -0.3025
+   -0.9493
+    0.0533
+   -0.0683
+   -0.5905
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.432206e+00    1.848e-01    6.138e-06
+    1      75    2.429603e+00    9.450e-02    1.093e-01    2.343e-02
+    2     113    2.428606e+00    4.799e-02    1.669e-01    9.937e-03
+    3     151    2.428199e+00    2.424e-02    1.967e-01    4.870e-03
+    4     189    2.428020e+00    1.221e-02    2.118e-01    2.421e-03
+    5     227    2.427938e+00    6.139e-03    2.195e-01    1.206e-03
+    6     265    2.427898e+00    3.085e-03    2.233e-01    6.022e-04
+    7     303    2.427878e+00    1.549e-03    2.253e-01    3.012e-04
+    8     341    2.427869e+00    7.781e-04    2.262e-01    1.508e-04
+    9     379    2.427864e+00    3.907e-04    2.267e-01    7.558e-05
+   10     417    2.427862e+00    1.961e-04    2.270e-01    3.788e-05
+   11     455    2.427860e+00    9.848e-05    2.271e-01    1.899e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.270904e-01,'selected',1.000000e+00,9.848047e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 115.040915 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0321
+    0.0948
+    0.1391
+    0.0056
+    0.9826
+    0.0894
+    0.0079
+    0.0003
+
+
+ans =
+
+   -0.0256
+    0.0618
+   -0.3081
+   -0.9475
+    0.0539
+   -0.0689
+   -0.5888
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 8.4:
+
+ans =
+
+    0.0067
+    0.0221
+    0.0311
+    0.0009
+    0.1895
+    0.0190
+    0.0016
+    0.0000
+
+
+ans =
+
+   -0.0256
+    0.0618
+   -0.3081
+   -0.9475
+    0.0539
+   -0.0689
+   -0.5888
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.427860e+00    1.895e-01    5.989e-06
+    1      75    2.425092e+00    9.719e-02    1.120e-01    2.356e-02
+    2     113    2.424024e+00    4.941e-02    1.712e-01    9.976e-03
+    3     151    2.423587e+00    2.497e-02    2.018e-01    4.872e-03
+    4     189    2.423394e+00    1.258e-02    2.174e-01    2.416e-03
+    5     227    2.423305e+00    6.327e-03    2.253e-01    1.202e-03
+    6     265    2.423262e+00    3.179e-03    2.292e-01    6.000e-04
+    7     303    2.423241e+00    1.597e-03    2.312e-01    3.000e-04
+    8     341    2.423231e+00    8.019e-04    2.322e-01    1.502e-04
+    9     379    2.423226e+00    4.026e-04    2.327e-01    7.527e-05
+   10     417    2.423223e+00    2.022e-04    2.330e-01    3.772e-05
+   11     455    2.423222e+00    1.015e-04    2.331e-01    1.891e-05
+   12     493    2.423221e+00    5.096e-05    2.332e-01    9.479e-06
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',2.331860e-01,'selected',1.000000e+00,5.095685e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 126.364456 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0166
+    0.0485
+    0.0719
+    0.0028
+    0.5075
+    0.0487
+    0.0038
+    0.0001
+
+
+ans =
+
+   -0.0216
+    0.0633
+   -0.3140
+   -0.9455
+    0.0544
+   -0.0694
+   -0.5871
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 9:
+
+ans =
+
+    0.0059
+    0.0192
+    0.0269
+    0.0008
+    0.1595
+    0.0169
+    0.0013
+    0.0000
+
+
+ans =
+
+   -0.0216
+    0.0633
+   -0.3140
+   -0.9455
+    0.0544
+   -0.0694
+   -0.5871
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.423221e+00    1.595e-01    5.605e-06
+    1      75    2.420853e+00    8.166e-02    9.528e-02    1.922e-02
+    2     113    2.419894e+00    4.144e-02    1.453e-01    8.473e-03
+    3     151    2.419480e+00    2.093e-02    1.711e-01    4.205e-03
+    4     189    2.419291e+00    1.054e-02    1.842e-01    2.102e-03
+    5     227    2.419202e+00    5.298e-03    1.908e-01    1.051e-03
+    6     265    2.419158e+00    2.662e-03    1.941e-01    5.256e-04
+    7     303    2.419136e+00    1.337e-03    1.958e-01    2.632e-04
+    8     341    2.419125e+00    6.713e-04    1.967e-01    1.319e-04
+    9     379    2.419120e+00    3.370e-04    1.971e-01    6.609e-05
+   10     417    2.419117e+00    1.692e-04    1.973e-01    3.313e-05
+   11     455    2.419116e+00    8.496e-05    1.974e-01    1.661e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.974007e-01,'selected',1.000000e+00,8.496124e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 113.486867 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0296
+    0.0870
+    0.1279
+    0.0051
+    0.8487
+    0.0872
+    0.0061
+    0.0002
+
+
+ans =
+
+   -0.0174
+    0.0647
+   -0.3190
+   -0.9438
+    0.0549
+   -0.0699
+   -0.5856
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 9.7:
+
+ans =
+
+    0.0059
+    0.0190
+    0.0269
+    0.0008
+    0.1582
+    0.0175
+    0.0013
+    0.0000
+
+
+ans =
+
+   -0.0174
+    0.0647
+   -0.3190
+   -0.9438
+    0.0549
+   -0.0699
+   -0.5856
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.419116e+00    1.582e-01    5.366e-06
+    1      75    2.416693e+00    8.105e-02    9.474e-02    1.874e-02
+    2     113    2.415702e+00    4.115e-02    1.445e-01    8.245e-03
+    3     151    2.415271e+00    2.078e-02    1.701e-01    4.083e-03
+    4     189    2.415073e+00    1.046e-02    1.831e-01    2.040e-03
+    5     227    2.414978e+00    5.260e-03    1.897e-01    1.019e-03
+    6     265    2.414932e+00    2.643e-03    1.930e-01    5.097e-04
+    7     303    2.414909e+00    1.327e-03    1.947e-01    2.552e-04
+    8     341    2.414898e+00    6.665e-04    1.955e-01    1.278e-04
+    9     379    2.414892e+00    3.346e-04    1.959e-01    6.408e-05
+   10     417    2.414889e+00    1.680e-04    1.961e-01    3.212e-05
+   11     455    2.414888e+00    8.435e-05    1.962e-01    1.611e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.962313e-01,'selected',1.000000e+00,8.434538e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 113.895479 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0297
+    0.0867
+    0.1285
+    0.0050
+    0.8429
+    0.0908
+    0.0057
+    0.0002
+
+
+ans =
+
+   -0.0136
+    0.0660
+   -0.3239
+   -0.9421
+    0.0553
+   -0.0704
+   -0.5840
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 10.4:
+
+ans =
+
+    0.0051
+    0.0163
+    0.0232
+    0.0007
+    0.1334
+    0.0155
+    0.0010
+    0.0000
+
+
+ans =
+
+   -0.0136
+    0.0660
+   -0.3239
+   -0.9421
+    0.0553
+   -0.0704
+   -0.5840
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.414888e+00    1.334e-01    4.988e-06
+    1      75    2.412810e+00    6.814e-02    8.074e-02    1.544e-02
+    2     113    2.411927e+00    3.453e-02    1.228e-01    6.957e-03
+    3     151    2.411530e+00    1.742e-02    1.444e-01    3.470e-03
+    4     189    2.411343e+00    8.768e-03    1.554e-01    1.742e-03
+    5     227    2.411253e+00    4.408e-03    1.609e-01    8.732e-04
+    6     265    2.411208e+00    2.214e-03    1.637e-01    4.375e-04
+    7     303    2.411186e+00    1.112e-03    1.650e-01    2.193e-04
+    8     341    2.411175e+00    5.583e-04    1.658e-01    1.099e-04
+    9     379    2.411170e+00    2.803e-04    1.661e-01    5.513e-05
+   10     417    2.411167e+00    1.407e-04    1.663e-01    2.765e-05
+   11     455    2.411165e+00    7.065e-05    1.664e-01    1.387e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.663696e-01,'selected',1.000000e+00,7.065298e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 112.389727 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0261
+    0.0765
+    0.1126
+    0.0044
+    0.7064
+    0.0802
+    0.0046
+    0.0001
+
+
+ans =
+
+   -0.0101
+    0.0671
+   -0.3282
+   -0.9405
+    0.0557
+   -0.0707
+   -0.5826
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 11.2:
+
+ans =
+
+    0.0050
+    0.0159
+    0.0227
+    0.0007
+    0.1297
+    0.0156
+    0.0010
+    0.0000
+
+
+ans =
+
+   -0.0101
+    0.0671
+   -0.3282
+   -0.9405
+    0.0557
+   -0.0707
+   -0.5826
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.411165e+00    1.297e-01    4.778e-06
+    1      75    2.409090e+00    6.626e-02    7.876e-02    1.480e-02
+    2     113    2.408200e+00    3.358e-02    1.198e-01    6.674e-03
+    3     151    2.407797e+00    1.694e-02    1.408e-01    3.326e-03
+    4     189    2.407606e+00    8.524e-03    1.514e-01    1.670e-03
+    5     227    2.407513e+00    4.285e-03    1.568e-01    8.369e-04
+    6     265    2.407468e+00    2.152e-03    1.595e-01    4.194e-04
+    7     303    2.407445e+00    1.081e-03    1.609e-01    2.102e-04
+    8     341    2.407434e+00    5.427e-04    1.615e-01    1.054e-04
+    9     379    2.407428e+00    2.725e-04    1.619e-01    5.285e-05
+   10     417    2.407425e+00    1.368e-04    1.621e-01    2.651e-05
+   11     455    2.407424e+00    6.868e-05    1.621e-01    1.329e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.621499e-01,'selected',1.000000e+00,6.867681e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 111.477627 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0256
+    0.0748
+    0.1108
+    0.0043
+    0.6869
+    0.0810
+    0.0043
+    0.0001
+
+
+ans =
+
+   -0.0070
+    0.0682
+   -0.3323
+   -0.9390
+    0.0560
+   -0.0711
+   -0.5813
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 12:
+
+ans =
+
+    0.0043
+    0.0137
+    0.0195
+    0.0006
+    0.1100
+    0.0137
+    0.0008
+    0.0000
+
+
+ans =
+
+   -0.0070
+    0.0682
+   -0.3323
+   -0.9390
+    0.0560
+   -0.0711
+   -0.5813
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.407424e+00    1.100e-01    4.476e-06
+    1      75    2.405635e+00    5.603e-02    6.733e-02    1.234e-02
+    2     113    2.404846e+00    2.835e-02    1.022e-01    5.654e-03
+    3     151    2.404480e+00    1.429e-02    1.200e-01    2.820e-03
+    4     189    2.404305e+00    7.188e-03    1.290e-01    1.419e-03
+    5     227    2.404219e+00    3.613e-03    1.335e-01    7.123e-04
+    6     265    2.404177e+00    1.815e-03    1.358e-01    3.573e-04
+    7     303    2.404155e+00    9.112e-04    1.370e-01    1.792e-04
+    8     341    2.404145e+00    4.575e-04    1.376e-01    8.987e-05
+    9     379    2.404139e+00    2.297e-04    1.378e-01    4.508e-05
+   10     417    2.404137e+00    1.153e-04    1.380e-01    2.262e-05
+   11     455    2.404135e+00    5.789e-05    1.381e-01    1.135e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.380635e-01,'selected',1.000000e+00,5.788970e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 114.932008 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0223
+    0.0654
+    0.0964
+    0.0038
+    0.5791
+    0.0712
+    0.0036
+    0.0001
+
+
+ans =
+
+   -0.0043
+    0.0691
+   -0.3359
+   -0.9377
+    0.0563
+   -0.0714
+   -0.5800
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 12.9:
+
+ans =
+
+    0.0042
+    0.0132
+    0.0189
+    0.0006
+    0.1057
+    0.0135
+    0.0007
+    0.0000
+
+
+ans =
+
+   -0.0043
+    0.0691
+   -0.3359
+   -0.9377
+    0.0563
+   -0.0714
+   -0.5800
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.404135e+00    1.057e-01    4.314e-06
+    1      75    2.402376e+00    5.385e-02    6.493e-02    1.173e-02
+    2     113    2.401594e+00    2.724e-02    9.851e-02    5.388e-03
+    3     151    2.401230e+00    1.373e-02    1.156e-01    2.684e-03
+    4     189    2.401054e+00    6.907e-03    1.243e-01    1.350e-03
+    5     227    2.400968e+00    3.471e-03    1.287e-01    6.775e-04
+    6     265    2.400925e+00    1.743e-03    1.309e-01    3.398e-04
+    7     303    2.400904e+00    8.754e-04    1.320e-01    1.704e-04
+    8     341    2.400893e+00    4.395e-04    1.325e-01    8.549e-05
+    9     379    2.400888e+00    2.207e-04    1.328e-01    4.289e-05
+   10     417    2.400885e+00    1.108e-04    1.329e-01    2.152e-05
+   11     455    2.400884e+00    5.561e-05    1.330e-01    1.079e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.330190e-01,'selected',1.000000e+00,5.561430e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 111.887715 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+    0.0216
+    0.0633
+    0.0936
+    0.0037
+    0.5564
+    0.0705
+    0.0033
+    0.0001
+
+
+ans =
+
+   -0.0019
+    0.0700
+   -0.3393
+   -0.9364
+    0.0566
+   -0.0717
+   -0.5789
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 13.9:
+
+ans =
+
+    0.0040
+    0.0125
+    0.0180
+    0.0006
+    0.0999
+    0.0132
+    0.0007
+    0.0000
+
+
+ans =
+
+   -0.0019
+    0.0700
+   -0.3393
+   -0.9364
+    0.0566
+   -0.0717
+   -0.5789
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.400884e+00    9.985e-02    4.155e-06
+    1      74    2.397492e+00    3.039e-03    1.200e-01    2.190e-02
+    2     111    2.397724e+00    1.023e-05    1.259e-01    3.818e-03
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.259098e-01,'selected',1.000000e+00,1.023348e-05,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 26.893237 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0232
+   -0.0452
+   -0.1546
+   -0.0028
+   -0.3853
+   -0.1508
+   -0.0097
+    0.0229
+
+
+ans =
+
+    0.0009
+    0.0709
+   -0.3426
+   -0.9351
+    0.0568
+   -0.0720
+   -0.5777
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 15:
+
+ans =
+
+    0.0037
+    0.0116
+    0.0168
+    0.0006
+    0.0929
+    0.0125
+    0.0006
+    0.0000
+
+
+ans =
+
+    0.0009
+    0.0709
+   -0.3426
+   -0.9351
+    0.0568
+   -0.0720
+   -0.5777
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.397724e+00    9.291e-02    3.950e-06
+    1      74    2.394508e+00    2.676e-03    1.122e-01    2.015e-02
+    2     111    2.394706e+00    9.933e-06    1.174e-01    3.027e-03
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.173906e-01,'selected',1.000000e+00,9.932587e-06,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 26.540406 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0188
+   -0.0357
+   -0.1236
+   -0.0019
+   -0.2936
+   -0.1208
+   -0.0073
+    0.0132
+
+
+ans =
+
+    0.0031
+    0.0717
+   -0.3457
+   -0.9339
+    0.0570
+   -0.0723
+   -0.5766
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 16.2:
+
+ans =
+
+    0.0035
+    0.0108
+    0.0156
+    0.0005
+    0.0857
+    0.0119
+    0.0005
+    0.0000
+
+
+ans =
+
+    0.0031
+    0.0717
+   -0.3457
+   -0.9339
+    0.0570
+   -0.0723
+   -0.5766
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.394706e+00    8.570e-02    3.797e-06
+    1      74    2.391686e+00    2.321e-03    1.039e-01    1.840e-02
+    2     111    2.391853e+00    8.917e-06    1.085e-01    2.446e-03
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',1.084959e-01,'selected',1.000000e+00,8.916789e-06,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 25.867895 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0149
+   -0.0280
+   -0.0971
+   -0.0013
+   -0.2196
+   -0.0948
+   -0.0057
+    0.0086
+
+
+ans =
+
+    0.0049
+    0.0724
+   -0.3485
+   -0.9327
+    0.0572
+   -0.0725
+   -0.5755
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 17.4:
+
+ans =
+
+    0.0030
+    0.0092
+    0.0134
+    0.0005
+    0.0727
+    0.0103
+    0.0004
+    0.0000
+
+
+ans =
+
+    0.0049
+    0.0724
+   -0.3485
+   -0.9327
+    0.0572
+   -0.0725
+   -0.5755
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.391853e+00    7.273e-02    3.626e-06
+    1      74    2.389254e+00    1.724e-03    8.896e-02    1.546e-02
+    2     111    2.389372e+00    6.550e-06    9.234e-02    1.692e-03
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',9.233862e-02,'selected',1.000000e+00,6.549713e-06,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 26.509515 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0097
+   -0.0177
+   -0.0615
+   -0.0006
+   -0.1307
+   -0.0598
+   -0.0034
+    0.0041
+
+
+ans =
+
+    0.0063
+    0.0730
+   -0.3509
+   -0.9318
+    0.0574
+   -0.0727
+   -0.5746
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 18.7:
+
+ans =
+
+    0.0028
+    0.0086
+    0.0125
+    0.0004
+    0.0675
+    0.0097
+    0.0004
+    0.0000
+
+
+ans =
+
+    0.0063
+    0.0730
+   -0.3509
+   -0.9318
+    0.0574
+   -0.0727
+   -0.5746
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.389372e+00    6.747e-02    3.533e-06
+    1      74    2.386925e+00    1.513e-03    8.282e-02    1.424e-02
+    2     111    2.387026e+00    5.725e-06    8.579e-02    1.425e-03
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',8.578550e-02,'selected',1.000000e+00,5.725348e-06,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 25.609545 seconds.
+
+f =
+
+   1.0e-04 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0080
+   -0.0143
+   -0.0499
+   -0.0004
+   -0.1019
+   -0.0485
+   -0.0027
+    0.0030
+
+
+ans =
+
+    0.0076
+    0.0736
+   -0.3532
+   -0.9308
+    0.0576
+   -0.0729
+   -0.5738
+
+
+reuse =
+
+     1
+
+Looking for optimal control with norm 20.1:
+
+ans =
+
+    0.0026
+    0.0079
+    0.0116
+    0.0004
+    0.0622
+    0.0091
+    0.0004
+    0.0000
+
+
+ans =
+
+    0.0076
+    0.0736
+   -0.3532
+   -0.9308
+    0.0576
+   -0.0729
+   -0.5738
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.387026e+00    6.221e-02    3.447e-06
+    1      74    2.384738e+00    1.309e-03    7.661e-02    1.303e-02
+    2     111    2.384822e+00    4.902e-06    7.917e-02    1.184e-03
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_found','CSHelpWindow');">Local minimum found that satisfies the constraints</a>.
+
+Optimization completed because the objective function is non-decreasing in 
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'feasible_directions','CSHelpWindow');">feasible directions</a>, to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'optimality_tolerance_msgcsh','CSHelpWindow');">optimality tolerance</a>,
+and constraints are satisfied to within the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',1.000000e+00,true,true,'fmincon',7.917433e-02,'selected',1.000000e+00,4.901795e-06,'selected',1.000000e-04,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+Elapsed time is 25.811758 seconds.
+
+f =
+
+   1.0e-05 *
+
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+   -0.0644
+   -0.1136
+   -0.3987
+   -0.0020
+   -0.7826
+   -0.3885
+   -0.0218
+    0.0207
+
+
+ans =
+
+    0.0087
+    0.0742
+   -0.3553
+   -0.9300
+    0.0577
+   -0.0731
+   -0.5730
+
+continuation successfully finished
