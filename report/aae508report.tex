@@ -4,6 +4,7 @@
 
 \usepackage{graphicx}
 \usepackage{amsmath}
+
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
 \usepackage{longtable,tabularx}
@@ -13,8 +14,12 @@
 \usepackage{amssymb}	%% allows math logical symbols
 \usepackage{graphicx}	% allows for graphics numbering
 
+% Included by the user
 \usepackage{fancyhdr}
 \usepackage{afterpage}
+\usepackage{float}		% allows to use [H] float, stricter version of [h]
+\usepackage{matlab-prettifier}
+
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 {
@@ -55,7 +60,14 @@
 \bibliography{aae508biblio}
 
 \newpage
-\input{textfiles/appendix}
+\appendix
+\section*{Appendices}
+
+\input{textfiles/appendixMath}
+
+\newpage
+\input{textfiles/appendixCode}
+
 
 
 

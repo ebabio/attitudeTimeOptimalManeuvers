@@ -15,7 +15,7 @@ We start by discussing in detail the solution for the 2-norm solution. Figure \r
 
 The total used for the maneuver is $2.5596$ and the amplitude of total rotated angle is $1.6378$ radians. A closer look to the graphics reveal that our initial guess for the solution is indeed correct. The $\lambda_{\omega}$ behave linearly with time and being equal to 0 at exactly the half of the motion where the inputs reverse. The amplitude of these is set so that they are aligned with the eigenaxis of the rotation.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[height=12cm,keepaspectratio]{media/l2Maneuver.png}
 	\caption{Solution, inputs and co-states for the switching function for the 2-norm optimal maneuver.}
@@ -24,7 +24,7 @@ The total used for the maneuver is $2.5596$ and the amplitude of total rotated a
 
 We now proceed to discuss the convergence process to the infinity norm. This was done by increasing the norm of the controller a about a 10 percent each iteration up to a norm of 20. Figure \ref{fig:lConvergence} shows some selected norms in the continuation process that show the evolution of the controller. As the norm of the controls increase the coupling between axes becomes more and more relaxed, for the $\infty$-norm they should be three independent controls bounds so the all three controls should lie on the $\pm1$ bound.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[height=8cm,keepaspectratio]{media/controlConvergence.png}
 	\caption{Three axes controls for different norms ranging from to 2 to 20. As the norm increases the three controls become more and more decoupled. Reproduced from Bilimoria \cite{bilimoria1993time}.}
@@ -41,7 +41,7 @@ The maneuver time has decreased to $2.3540$. A decrease above 8 percent in the m
 
 It is interesting to note that the maneuver time has decreased with respect to the eigenaxis maneuver even though we are following a longer path. This is because the controller is reorienting the body so that a torque greater than any individual limit is applied in the desired rotation of motion from an inertial perspective as point out by Bilimoria\cite{bilimoria1993time}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[height=12cm,keepaspectratio]{media/lInftyManeuver.png}
 	\caption{Solution, inputs and costates for the switching function for the $\infty$-norm optimal maneuver.}
