@@ -1,0 +1,83 @@
+\section{Numerical Solution}
+Once the TPBVP has been defined, the next step is to solve it. The discussion of the numerical solution will be split in three different topics, the first one will discuss the general strategy used for the problem and the statement of the boundary conditions, the second one will cover the initial guesses used for the solver, the third one considers the possible methods used for the solution and the advantages and disadvantages of each one them.
+
+\subsection{Statement of the constraints}
+The problem to be solved right now can be thought of a feasibility problem where we satisfy the constraints of the TPBVP. As such we will resort to numerical methods for its solution, but we should try to reduce the dimensionality of the problem and improve its conditioning as much as possible.
+
+The first guess for the numerical solver will be obtained from the numerical integration of some initial conditions. Since we know the initial values for the states these will be fixed and will not be allowed to change, this helps to reduce the dimensionality of the problem by 7 states. In the most basic form of the solution, we have reduced the problem to finding the initial values for the 7 co-states.
+
+Also, we know that the Hamiltonian is constant throughout the motion and $H=-1$. The information that this constraint provides is merely in the terms of scaling of the costates. However, for our particular problem since the scaling of the co-states is not critical since we use them in two ways: for modulating amplitude (where the relative values is the used information) and for a switching function (where only the sign matters). This means that in order to avoid ill-conditioned numerical problems we can reformulate the constant Hamiltonian as:
+\begin{equation}
+|\lambda_{q_f}|=1
+\end{equation}
+
+But recalling the costate equation for $\dot{\lambda}_q$ we can observe that it is just the rotation in  time of $\lambda_q$ under the angular velocity $\vec{\omega}$. This means that the magnitude of $\lambda_q$ stays constant in time, and therefore we check the magnitude at the initial conditions where it is more convenient for our initial guess. Therefore the transversality condition is substituted by:
+\begin{equation}
+|\lambda_{q_0}|=1
+\end{equation}
+
+Other than this condition, we will also check for state constraints at the final time. Since the final time is variable it is also another variable to be found in our constraints feasibility problem solution. We have a total of 8 constraints, 7 states and the just found condition on the module of $\lambda_q$, and 8 free variables, the initial states and the final time, so the problem is well defined.
+
+\subsection{Initial guesses and continuation strategy}
+After defining the constraints to be satisfied, the next step is how to come up with initial guesses for the solver. All solvers will work by solving an approximated problem, therefore we must come up with an initial guess close enough to the final solution in order for the solver to converge.
+
+A possible strategy is to use a continuation on the norm. If the solution for a specific norm is known, its initial co-states can be used as a first guess for the problem of a similar norm. However, in any case a initial solution for a particular norm must be known. In the followin paragraph we come up with an initial guess for the 2-norm controller, so for solving higher norm controllers we will continuate the norm up to our desired final norm.
+
+In the case of the 2-norm control the initial solution can be found analytically with the following thought process. This solution is not meant to be a formal solution since it is only used as an initial guess. The 2-norm control has no preferred direction of control since all controls are embedded in a sphere, therefore the optimal control will be that uses the shortest path. This shortest path will correspond to the rotation about the eigenaxis that connects the initial and final states. Since the initial quaternion is fixed to $q_0=[1 \quad 0 \quad 0 \quad 0]^T$, the final quaternion provides the angle $\theta$ to be rotated and the eigenaxis $\vec{n}$ information in the angle-axis expression of the quaternion:
+\begin{equation}
+q(t) = \left( \cos \frac{\theta}{2} \ ,\ \sin\frac{\theta}{2} \ \vec{n} \right)
+\end{equation}
+
+In order to consider the time evolution of the rotation, we can consider the problem as a 1-d rotation where the rest-to-rest maneuver will follow a triangular angular velocity profile with one switch of the control exactly at the half of the path. The time to the switch since the beginning of the maneuver can be found as:
+\begin{equation}
+  \frac{1}{2} t_{sw} = \theta_f \quad \implies \quad t_f=2 t_{sw} = 2 \sqrt{\theta_f}
+\end{equation}
+
+The angular velocity must be parallel to the eigenaxis and therefore so will be the $\vec{u}$, the switching must happen in all three components at the same time and then they must be equal to zero at $t_f/2$. We previously said that $\lambda_q$ rotates in time with $\omega$ so it must follow also follow an eigenaxis rotation. We can express it as the composition of the rotation of $q$ and the initial offset:
+\begin{equation}
+\lambda_q = q(t) \lambda_{q_0}
+\end{equation}
+
+And then for $\lambda_\omega$ we get:
+\begin{equation}
+\dot{\lambda}_\omega = -\frac{1}{2} \text{Im}(q(t)' \circ q(t) \circ \lambda_{q_0}) = -\frac{1}{2} \text{Im}(\lambda_{q_0})
+\end{equation}
+
+So from the expression above states that $\lambda_{\omega}(t)$ is linear with time and knowing that $\lambda_{\omega}$ must be parallel to the rotation axis we can write the expression below. For that we use the fact that $\lambda_{\omega}(0)$ just oppose the rotation axis for the input to be aligned with it.
+\begin{equation*}
+\lambda_{\omega}(0) = \frac{1}{2} \text{Im}(\lambda_{q_0}) (t_f/2) = - k \vec{n}
+\end{equation*}
+
+So from this expression we get that:
+\begin{align}
+\lambda_{q_0} &= - [0 \quad \vec{n}]^T\\
+\lambda_{\omega_0} &= -\frac{t_f}{4} \vec{n}
+\end{align}
+
+\subsection{Solving methods}
+Different solvers for the feasibility problem were considered with their advantages and disadvantages. The options are summarized below with a discussion on their applicability to our problem of interest
+
+\subsubsection{Collocation methods} 
+They are based on discretization of the motion into several intervals where the motion is integrated usually in an implicit way. These methods are characterized by their efficiency but lack the accuracy of other methods. MATLAB's bvp4c was the first option to be tested since it is meant for this kind of problems. 
+
+Its first problem comes from the collocation of swicthing and signum functions which cause the Jacobian to be singular. This was solved by approximating the signum function by a hyperbolic tangent so the continuation strategy would increase the norm and also the accuracy of the hyperbolic tangent approximation.
+
+They are able to converge to valid solutions for low order norms but they were not able to converge with the desired accuracy as the continuation increased.
+
+\subsubsection{Multiple shooting method with Newton Iterations}
+A shooting method consists on running solving the feasibility problem by obtaining a Jacobian of how changes in the initial state about some guess change the final conditions. This is leads to a Newton iteration scheme where the errors and their Jacobian are used to compute the new initial conditions until the error is minimized.
+
+The Jacobian approximation for changes in the initial conditions is only valid for an interval around the initial guess depending on the sensitivity of the problem. In order to minimize this sensitivity multiple shooting is used. It decreases the sensitivity by splitting the time interval into several intervals. On each of these intervals a shooting is performed. Since the number of states has increased, you have a initial state guess at the beginning of each shooting, extra constraints have to be added. These constraints ensure the continuity between shootings so that all different shootings are consistent. This decreases the sensitivity and increases the robustness of the method at the expense of more design constraints and increased computational cost. The preferred number of shooting intervals was set to 3.
+
+In order to apply this method an integration scheme has to be used. Here MATLAB's ode 45 RungeKutta integrator was used with tight integration constraints to prevent numerical error from interfering in the computation of the Jacobian matrix. Specifically the relative tolerance was set to $10^{-11}$ and the absolute tolerance to $10^{-14}$.
+
+This method works as long as the Jacobian approximation works. It seemed to have convergence problems as the norm increased. It may have been solved by decreasing the step in the continuation.
+
+\subsubsection{Multiple shooting method with fmincon}
+This method is based on the previous method. The integration and constraint formulation to ensure continuity between different shootings is formulated in the same way. The difference lies in the solver used to find the new initial guess after each iteration.
+
+We used MATLAB's fmincon, a convex optimizer that allows for constraints directly. Therefore instead of trying to minimize the constraint functions in the way of an augmented Lagrangian objective function we let fmincon handle the constraints. This solver introduces methods for satisfying the constraint that go beyond the Newton's method we were using before. This leads to a greater radius of convergence.
+
+The objective function to be minimized was time and the constraints were the ones already stated. However, we are not particularly interested in minimizing time, we already know that the solution will be time optimal if the constraints are satisfied. Optimization paramters are chosen according to this idea. The tolerance for the constraints is set to $10^{-4}$ and for the objective function optimility the tolerance is set to 1 since we are not really concerned about it.
+
+This approach was the one that allowed for successful computation of the optimal control. The parameters for the integration are the same as those above. Results discussed below were found using this method.

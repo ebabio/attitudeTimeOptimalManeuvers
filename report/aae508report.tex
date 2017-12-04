@@ -1,0 +1,62 @@
+\documentclass[journal]{new-aiaa}
+%\documentclass[conf]{new-aiaa} for conference papers
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{longtable,tabularx}
+\setlength\LTleft{0pt}
+
+\usepackage{amsmath}	% allows unnumbered equations with equation*
+\usepackage{amssymb}	%% allows math logical symbols
+\usepackage{graphicx}	% allows for graphics numbering
+
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+{
+	\fancyhf{}
+	\chead{Enrique Babio - Time Optimal Attitude Maneuvers}
+	\cfoot{\thepage}
+}
+\fancypagestyle{fancyfirst}
+{
+	\fancyhf{}
+	\cfoot{\thepage}
+}
+
+\title{Time-Optimal Attitude Maneuvers}
+\author{Enrique Babio}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{fancyfirst}
+\afterpage{\thispagestyle{fancy}}
+
+\input{textfiles/abstract}
+
+%\input{textfiles/nomenclature}
+
+\input{textfiles/introduction}
+
+\input{textfiles/analysis}
+
+\input{textfiles/numericalSol}
+
+\input{textfiles/results}
+
+\input{textfiles/conclusion}
+
+\bibliography{aae508biblio}
+
+\newpage
+\input{textfiles/appendix}
+
+
+
+\end{document}

@@ -1,0 +1,82 @@
+\appendix
+
+\section*{Appendices}
+
+\section{Mathematical notation}
+\subsection{Quaternion and Vector notation and derivatives}
+Here we use the so called Hamilton quaternion convention. A unitary quaternion $q$ with components $q_0, q_x, q_y, q_z$ is defined as:
+\begin{equation}
+ q = 
+ \left[ \begin{matrix}
+ q_0 & q_x & q_y & q_z
+ \end{matrix}  \right]^T
+\end{equation}
+Where $q_0$ represents the real part of the quaternion associated with the rotation angle and $q_x, q_y, q_z$ represent the imaginary part associated with the rotation axis.
+
+The quaternion product of the quaternions $q$ and $p$ is defined as usual and denoted by $q \circ p$. The quaternion conjugate is denoted by $q'$. We highlight the quaternion product as a matrix product as shown in Parwana \cite{parwana2017quaternion} and its relations with the conjugate quaternion:
+\begin{equation}
+q \circ p = (q' \circ p')' = Q(q) p = \bar{Q}(p) q 
+= 
+\left[\begin{matrix}
+  q_0 & -q_x & -q_y & -q_z \\
+  q_x & q_0 & -q_z & q_y \\
+  q_y & q_z & q_0 & -q_x \\
+  q_z & -q_y & q_x & q_0 
+\end{matrix}\right]
+ \left[ \begin{matrix}
+p_0 \\ p_x \\ p_y \\ p_z
+\end{matrix}  \right]
+=
+\left[\begin{matrix}
+p_0 & -p_x & -p_y & -p_z \\
+p_x & p_0 & p_z & -p_y \\
+p_y & -p_z & p_0 & p_x \\
+p_z & p_y & -p_x & p_0 
+\end{matrix}\right]
+\left[ \begin{matrix}
+q_0 \\ q_x \\ q_y \\ q_z
+\end{matrix}  \right]
+\end{equation}
+
+The time derivative of $q$ as a function of the angular velocity in the rotating body frame $\vec{\omega}$ is 
+\begin{equation}
+\dot{q} = 1/2  \ q \circ [0 \quad \vec{\omega}]^T
+\end{equation}
+
+In the Hamiltonian we get an expression of the form $\lambda^T (q \circ p)$, where $\lambda$ is a 4 element column vector. This expression is scalar. Expressing it as a matrix product we can find its derivative with respect to $q$ and $p$, using matrix calculus to obtain more compact expressions for the costates ODEs, we will use a column gradient convention. We start by finding the derivative of the quaternion product:
+\begin{align}
+\frac{\partial}{\partial p} \lambda^T (q \circ p) &= \frac{\partial}{\partial p} \lambda^T Q(q) p = (\lambda^T Q(q))^T = Q(q)^T \lambda = Q(q') \lambda = q'\circ \lambda \\
+\frac{\partial}{\partial q} \lambda^T (q \circ p) &= \frac{\partial}{\partial p} \lambda^T \bar{Q}(p) q = (\lambda^T \bar{Q}(p))^T = \bar{Q}(p') \lambda = \lambda \circ p'
+\end{align}
+
+Where the derivative of the quaternion is obtained directly from Matrix calculus and the second one is obtained by inspection of the resulting matrix. We now obtain the expressions for the partial of the Hamiltonian taylored to the dynamics obtained for our problem:
+\begin{equation}
+H(x,u,\lambda) = \frac{1}{2} \lambda_q^T (q \circ \omega) + \lambda_\omega^T \vec{u}
+\end{equation}
+
+\begin{equation}
+ - \frac{\partial H}{\partial q} = - \frac{1}{2} \frac{\partial}{\partial q}  \lambda_q^T (q \circ \omega) = - \frac{1}{2} \lambda_q \circ \omega' = \frac{1}{2} \lambda_q \circ \omega
+\end{equation}
+\begin{equation}
+- \frac{\partial H}{\partial \omega} = - \frac{1}{2} \frac{\partial}{\partial \omega}  \lambda_q^T (q \circ \omega) = - \frac{1}{2} q' \circ \lambda_q
+\end{equation}
+
+\subsection{Derivative of a norm}
+The norm used in this report is defined in terms of an absolute value for the greatest generality. We prove here the derivative:
+\begin{equation}
+\frac{d}{dx}|x|^q = 
+\begin{cases}
+\quad \frac{d}{dx}x^q = q \ x^{q-1} = q \ |x|^{q-1}\qquad &\text{for} \ x>0 \\
+\quad \frac{d}{dx} (-x)^q = q \ (-x)^{q-1} =q \ |x|^{q-1} \qquad &\text{for} \ x<0 \\
+\end{cases}
+\end{equation}
+
+Or in a more compact way using the signum function:
+\begin{equation}
+\frac{d}{dx}|x|^q = \text{sgn}(x) \ q \ |x|^{q-1}
+\end{equation}
+
+We will also use extensively the following property of the signum function:
+\begin{equation}
+\text{sgn}(x \ y) = \text{sgn}(x) \ \text{sgn}(y)
+\end{equation}

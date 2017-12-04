@@ -1,0 +1,34 @@
+\section{Conclusions}
+The time-optimal maneuver has been studied for the two most relevant cases the 2-norm and the $\infty$-norm bounded controls. The conclusions for this work can be grouped in three main categories: optimality of the control, those regarding the solution, and finally the applicability and insight obtained from the results.
+
+About the control we can state that:
+\begin{enumerate}
+	\item First order necessary conditions for an arbitrary norm control have been found using Pontryagin's Minimum Principle. The resulting control is has the form of a modified switching function.
+	
+	\item For the $\infty$-norm controller, the resulting controls are independent switching functions.
+	
+	\item The existence of singular sub-arcs for the optimal solution has been ruled out.
+\end{enumerate}
+
+When it comes to solution of the system, the following can be concluded:
+\begin{enumerate}
+	\item The condition arising from the transversality condition can be rewritten to improve numerical condition in this particular problem.
+	
+	\item An analytical solution was found for the 2-norm controller or eigenaxis maneuver.
+	
+	\item A continuation strategy based on the norm can be used to find any specific norm. The infinity norm was found following this procedure starting in the 2-norm.
+	
+	\item Multiple shooting methods can be used for increased robustness and accuracy in the solution at the expense of increased computation cost.
+\end{enumerate}
+	
+Finally, about the method used and the results obtained we can state
+
+\begin{enumerate}
+	\item Solutions of a norm higher than 2 improve the time used for a rest-to-rest attitude maneuver. In our particular example an improvement of 8\% was found.
+	
+	\item An arbitrary maneuver was tested. It has no special characteristics so this method should be applicable to any maneuver.
+	
+	\item The computation expense of the $\infty$-norm maneuver prevents it from its application to attitude control. The computation time used to find the initial co-states is not reasonable to be performed in real time. This could be done for 2-norm control since an analytical solution is known.
+\end{enumerate}
+
+This last finding is of critical importance to the applicability of this kind of maneuvers in real systems. Suboptimal approaches could be used to allow fast attitude maneuvers such as the 2-norm control. Other authors such as Byers\cite{byers1993quasi} have worked on this paper with intention of leveraging the known structure of the control to simplify the computations. These would allow the implementation of this kind of optimal maneuvers in the AOCS/FCS systems of spacecraft and aircraft. If the topic was to be researched more deeply the next steps would be in this direction.
