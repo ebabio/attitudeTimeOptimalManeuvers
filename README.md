@@ -5,3 +5,6 @@ Code for solving the 3-dimensional attitude maneuvers is provided. The main scri
 The H-infinity controller can be obtained by setting a norm higher than 20.
 
 Results for a given maneuver are included in results. The format of this data is directly compatible with the display code provided at the end of the main 3-dimensional script.
+
+This maneuver is around 8% faster than the single axis of rotation maneuver.
+![time-optimal maneuver](results/lInfnityManeuver.png)
