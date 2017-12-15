@@ -1,5 +1,6 @@
 # attitudeTimeOptimalManeuvers
 Time optimal rest-to-rest attitude maneuvers are solved for using the Pontryagin's Minimum Principle.
+
 Code for solving the 3-dimensional attitude maneuvers is provided. The main scripts are in the root folder, the loop script attempts a continuation process.
 The control is bounded by some L norm of the three axis torque control. The L-infinity controller can be obtained by setting a L-norm higher than 20.
 
