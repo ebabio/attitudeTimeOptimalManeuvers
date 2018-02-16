@@ -15,9 +15,9 @@ clc
 %% Define boundary conditions
 
 % Initial / final conditions
-roll = deg2rad(-20);
-pitch  = deg2rad(10);
-yaw = deg2rad(90);
+roll = deg2rad(0.01);
+pitch  = deg2rad(-0.01);
+yaw = deg2rad(179.99);
 
 q0 = [1 0 0 0]';
 qf = eul2quat([yaw pitch roll])';

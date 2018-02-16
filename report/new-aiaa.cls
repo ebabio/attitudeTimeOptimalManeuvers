@@ -17,7 +17,7 @@
 
 \ExecuteOptions{}
 \ProcessOptions\relax
-\LoadClass[10pt]{article}
+\LoadClass[12pt]{article}
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}

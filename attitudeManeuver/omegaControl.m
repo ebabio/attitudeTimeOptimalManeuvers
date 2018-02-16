@@ -15,6 +15,13 @@ den = (lambda_omega_exp(1)^lNorm + lambda_omega_exp(2)^lNorm + lambda_omega_exp(
 
 fun = @(x) sign(x);
 
-u(1) = -fun(k*lambda_omega(1)) * lambda_omega_exp(1) / den;
-u(2) = -fun(k*lambda_omega(2)) * lambda_omega_exp(2) / den;
-u(3) = -fun(k*lambda_omega(3)) * lambda_omega_exp(3) / den;
+if(k<20)
+    u(1) = -fun(k*lambda_omega(1)) * lambda_omega_exp(1) / den;
+    u(2) = -fun(k*lambda_omega(2)) * lambda_omega_exp(2) / den;
+    u(3) = -fun(k*lambda_omega(3)) * lambda_omega_exp(3) / den;
+else
+    u(1) = -fun(k*lambda_omega(1));
+    u(2) = -fun(k*lambda_omega(2));
+    u(3) = -fun(k*lambda_omega(3));
+end
+
